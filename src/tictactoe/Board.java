@@ -10,7 +10,7 @@ package tictactoe;
  * @author Ezat
  */
 public class Board {
-    private String[][] board;
+    public String[][] board;
     
     public Board(){
         board = new String[3][3];
@@ -47,4 +47,9 @@ public class Board {
             System.out.println();
         }
     }
+    
+    public String returnVal(int x, int y){
+        return board[x][y];
+    }
+    
 }
